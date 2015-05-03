@@ -1,9 +1,12 @@
 {
   "name": "broccoli-tsc",
   "description": "TypeScript filter for Broccoli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Mario Vejlupek <mario@vejlupek.cz>",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "license": "MIT",
   "repository": "angie-party/broccoli-tsc",
   "keywords": [
