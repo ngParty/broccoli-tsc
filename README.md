@@ -14,5 +14,6 @@ See example [Brocfile.js](Brocfile.js)
 ## Test
 
 ```bash
+$ npm install
 $ npm test
 ```
