@@ -15,6 +15,7 @@ class TypeScriptFilter extends Filter {
 
     }
 
+    // TODO: Fix super lint error
     super( inputTree, options )
 
   }
@@ -24,7 +25,9 @@ class TypeScriptFilter extends Filter {
 
   processString = function( string, srcFile ) {
 
-    var typeScriptOptions = { module: typescript.ModuleKind.CommonJS };
+    var typeScriptOptions = {
+      module: typescript.ModuleKind.CommonJS
+    };
 
     try {
 
