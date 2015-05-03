@@ -1,0 +1,28 @@
+{
+  "name": "broccoli-tsc",
+  "description": "TypeScript filter for Broccoli",
+  "version": "0.1.0",
+  "author": "Mario Vejlupek <mario@vejlupek.cz>",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "angie-party/broccoli-tsc",
+  "keywords": [
+    "broccoli-plugin",
+    "typescript",
+    "javascript"
+  ],
+  "dependencies": {
+    "broccoli-filter": "0.1.12",
+    "typescript": "1.5.0-beta"
+  },
+  "scripts": {
+    "prepublish": "tsc index.ts",
+    "pretest": "broccoli build tmp/test && tsc index.ts --out tmp/test/index-tsc.js;echo",
+    "test": "diff tmp/test/index-tsc.js tmp/test/index.js",
+    "posttest": "rimraf tmp/test"
+  },
+  "devDependencies": {
+    "broccoli-cli": "^1.0.0",
+    "rimraf": "^2.3.3"
+  }
+}
