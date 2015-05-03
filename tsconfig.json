@@ -5,24 +5,25 @@
         "module": "commonjs",
         "declaration": false,
         "noImplicitAny": false,
-        "removeComments": true,
+        "removeComments": false,
         "noLib": false
     },
     "filesGlob": [
         "./**/*.ts",
         "!./node_modules/**/*.ts"
     ],
-    "files": [
-        "./index.ts",
-        "./typings/broccoli-filter/broccoli-filter.d.ts",
-        "./typings/node/node.d.ts",
-        "./typings/tsd.d.ts",
-        "./typings/typescript/typescript.d.ts"
-    ],
     "formatCodeOptions": {
         "indentSize": 2,
         "tabSize": 2,
         "convertTabsToSpaces": true,
         "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
-    }
+    },
+    "files": [
+        "./Brocfile.ts",
+        "./index.ts",
+        "./typings/broccoli-filter/broccoli-filter.d.ts",
+        "./typings/node/node.d.ts",
+        "./typings/tsd.d.ts",
+        "./typings/typescript/typescript.d.ts"
+    ]
 }

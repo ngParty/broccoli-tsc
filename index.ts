@@ -1,5 +1,3 @@
-/// <reference path='typings/tsd.d.ts' />
-
 //TODO: add d.ts definition
 var Filter = require( 'broccoli-filter' )
 var typescript = require( 'typescript' )

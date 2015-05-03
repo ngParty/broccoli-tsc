@@ -32,8 +32,5 @@ typings
 # Ignore all js files
 *.js
 
-# Include Broccoli file
-!Brocfile.js
-
 # Exclude tmp folder
 tmp
