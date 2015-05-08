@@ -8,4 +8,4 @@ test:
 	cp index.js tmp/test/index-tsc.js && \
 	diff tmp/test/index-tsc.js tmp/test/index.js
 
-.PHONY: test, build
+.PHONY: test build
