@@ -19,10 +19,8 @@
     "typescript": "1.5.0-beta"
   },
   "scripts": {
-    "prepublish": "tsc;echo",
-    "pretest": "tsc;broccoli build tmp/test && cp index.js tmp/test/index-tsc.js",
-    "test": "diff tmp/test/index-tsc.js tmp/test/index.js",
-    "posttest": "rimraf tmp/test"
+    "prepublish": "make build",
+    "test": "make test"
   },
   "devDependencies": {
     "broccoli": "^0.16.2",
