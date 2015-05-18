@@ -1,14 +1,16 @@
 {
     "version": "1.5.0-beta",
     "compilerOptions": {
-        "target": "es5",
         "module": "commonjs",
-        "declaration": false,
-        "noImplicitAny": false,
-        "removeComments": false,
-        "noLib": false
+        "target": "es5"
     },
-    "filesGlob": [
+    "files": [
+        "./Brocfile.ts",
+        "./index.ts",
+        "./broccoli/broccoli-filter.d.ts",
+        "./node_modules/typescript/bin/typescript.d.ts"
+    ],
+     "filesGlob": [
         "./**/*.ts",
         "!./node_modules/**/*.ts"
     ],
@@ -17,13 +19,5 @@
         "tabSize": 2,
         "convertTabsToSpaces": true,
         "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
-    },
-    "files": [
-        "./Brocfile.ts",
-        "./index.ts",
-        "./typings/broccoli-filter/broccoli-filter.d.ts",
-        "./typings/node/node.d.ts",
-        "./typings/tsd.d.ts",
-        "./typings/typescript/typescript.d.ts"
-    ]
+    }
 }

@@ -1,20 +1,11 @@
-//TODO: add d.ts definition
-var Filter = require( 'broccoli-filter' )
-var typescript = require( 'typescript' )
+import Filter = require( 'broccoli-filter' );
+import typescript = require( 'typescript' );
 
 class TypeScriptFilter extends Filter {
 
-  constructor( inputTree: string, options: any = {} ) {
-
-    // Ensure instance of object on regular call
-    if ( !(this instanceof TypeScriptFilter) ) {
-
-      return new TypeScriptFilter(inputTree, options)
-
-    }
-
-    // TODO: Fix super lint error
-    super( inputTree, options )
+  constructor( inputTree: string, options = {} ) {
+   
+    super( inputTree,options );
 
   }
 
@@ -23,7 +14,7 @@ class TypeScriptFilter extends Filter {
 
   processString = function( string, srcFile ) {
 
-    var typeScriptOptions = {
+    var typeScriptOptions: typescript.CompilerOptions = {
       module: typescript.ModuleKind.CommonJS
     };
 
@@ -41,5 +32,4 @@ class TypeScriptFilter extends Filter {
 
 }
 
-
-module.exports = TypeScriptFilter
+export = TypeScriptFilter;

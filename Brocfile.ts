@@ -1,9 +1,9 @@
 // Broc file for test purpose
 
-var compileTypeScript = require( './' );
+import CompileTypeScript = require( './index' );
 
 var app = '.';
 
-app = compileTypeScript( app );
+var appCompiled = new CompileTypeScript( app );
 
-module.exports = app;
+export = appCompiled;
