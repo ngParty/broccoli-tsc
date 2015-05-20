@@ -1,11 +1,11 @@
-export PATH := node_modules/.bin:$(PATH)
+NODE_MODULES_BIN=node_modules/.bin
 
 build:
-	tsc; echo "done"
+	$(NODE_MODULES_BIN)/tsc
 
 test:
 	rm -rf tmp/test; \
-	tsc; \
+	$(NODE_MODULES_BIN)/tsc && \
 	broccoli build tmp/test && \
 	cp index.js tmp/test/index-tsc.js && \
 	diff tmp/test/index-tsc.js tmp/test/index.js
