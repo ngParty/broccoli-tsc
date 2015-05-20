@@ -34,3 +34,4 @@ typings
 
 # Exclude tmp folder
 tmp
+/*.d.ts

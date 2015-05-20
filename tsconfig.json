@@ -1,8 +1,8 @@
 {
     "version": "1.5.0-beta",
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5"
+      "target": "es5",
+      "module": "commonjs"
     },
     "files": [
         "./Brocfile.ts",

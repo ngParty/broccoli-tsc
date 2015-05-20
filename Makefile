@@ -1,3 +1,5 @@
+export PATH := node_modules/.bin:$(PATH)
+
 build:
 	tsc; echo "done"
 

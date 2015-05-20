@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "broccoli": "^0.16.2",
-    "broccoli-cli": "^1.0.0",
-    "rimraf": "^2.3.3"
+    "broccoli-cli": "^1.0.0"
   }
 }
