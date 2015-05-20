@@ -15,5 +15,11 @@ See example [Brocfile.js](Brocfile.js)
 
 ```bash
 $ npm install
-$ npm test
+$ make test
+```
+
+## Build
+
+```bash
+$ make
 ```
