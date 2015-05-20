@@ -9,7 +9,7 @@ Because currently there is only [shinnn/broccoli-typescript](https://github.com/
 
 ## Usage
 
-See example [Brocfile.js](Brocfile.js)
+See example [Brocfile.ts](Brocfile.ts)
 
 ## Test
 
