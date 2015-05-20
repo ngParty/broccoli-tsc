@@ -1,7 +1,7 @@
 # broccoli-tsc
 TypeScript preprocessor for Broccoli
 
-![Build Status](https://api.travis-ci.org/angie-party/broccoli-tsc.svg)
+[![Build Status](https://api.travis-ci.org/angie-party/broccoli-tsc.svg?branch=master)](https://travis-ci.org/angie-party/broccoli-tsc)
 
 ## Why
 
