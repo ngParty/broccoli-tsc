@@ -4,7 +4,7 @@ import typescript = require( 'typescript' );
 class TypeScriptFilter extends Filter {
 
   constructor( inputTree: string, options = {} ) {
-   
+
     super( inputTree,options );
 
   }
@@ -12,15 +12,15 @@ class TypeScriptFilter extends Filter {
   extensions = [ 'ts' ]
   targetExtension = 'js'
 
-  processString = function( string, srcFile ) {
+  processString = function( fileContent, srcFile ) {
 
-    var typeScriptOptions: typescript.CompilerOptions = {
-      module: typescript.ModuleKind.CommonJS
-    };
+    const configFileName = typescript.findConfigFile( srcFile )
+    const configOptions = typescript.readConfigFile( configFileName );
+    const parsedConfigOptions = typescript.parseConfigFile( configOptions );
 
     try {
 
-      return typescript.transpile( string, typeScriptOptions )
+      return typescript.transpile( fileContent, parsedConfigOptions.options )
 
     } catch (err) {
 
